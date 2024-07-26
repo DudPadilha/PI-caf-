@@ -1,0 +1,333 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    text-align: center; 
+    align-items: flex-start;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(233, 233, 233, 1);
+    font-family: 'Verdana';
+}
+
+#formulario {
+    position: absolute;
+    right: 300px;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 160px;
+    background-image: url('imagens/CaféPest.png'); /* Caminho para a sua imagem de fundo */
+    background-size: cover; /* Garante que a imagem cubra todo o cabeçalho */
+    background-position: center; /* Centraliza a imagem de fundo */
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+#logo {
+    background-image: url('imagens/CaféPest2__2_-removebg-preview.png');
+    width: 450px; /* ajuste o valor conforme necessário */
+    height: 115%; /* ajuste o valor conforme necessário */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-wrap: wrap;
+    position: absolute;
+    left: -10px;
+}
+
+.cadastrodiv {
+    height: 300px;
+    background-color: rgba(255, 178, 208, 1);
+    padding: 10px;
+    border-radius: 5px;
+    outline: 1px solid black;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs > input {
+    margin-top: 10px;
+    width: 30vw;
+    padding: 10px;
+    border: none;
+}
+
+#cadastrarbody,
+nav > ul,
+.cabecalho,
+.secoes,
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav > ul {
+    width: 90%;
+    max-width: 900px;
+    list-style: none;
+}
+
+li > a {
+    font-size: 12px;
+    text-decoration: none;
+    color: #fff;
+}
+
+nav {
+    width: 100%;
+    height: 40px;
+    background-color: rgba(208, 75, 126, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#buttons {
+    margin: 5px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+#cadastrar {
+    position: absolute;
+    right: 60px;
+    top: 65px;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 5px;
+    padding: 10px;
+    background-color: #186d28;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+#login {
+    position: absolute;
+    top: 65px;
+    right: 165px;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 5px;
+    padding: 10px;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+form {
+    margin: 15px;
+}
+
+input[type='text'] {
+    width: 30vw;
+    padding: 10px;
+    border: none;
+}
+
+.inputs > input[type='submit'] {
+    width: 100%;
+}
+
+input[type='submit'] {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #1C802F;
+    color: #fff;
+    border: none;
+    flex-wrap: wrap;
+}
+
+.secoes {
+    background-color: #fff;
+    min-height: 100px;
+    flex-wrap: wrap;
+}
+
+.card {
+    font-family: 'Verdana';
+    cursor: pointer;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 5px;
+    min-width: 120px;
+    width: 15%;
+    outline: 1px solid rgb(0, 0, 0);
+}
+
+.card > a {
+    text-align: center;
+    text-decoration: none;
+    color: rgb(10, 3, 3);
+    font-family: 'Verdana';
+}
+
+#cadastrarbody {
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 100%;
+    margin-top: 0;
+    background-color: #186d28;
+    flex-wrap: wrap;
+}
+
+main {
+    margin-top: 20px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+}
+
+.anuncio {
+    background-repeat: repeat-y;
+    background-size: 100%;
+    margin: 30px;
+    height: 100%;
+    display: flex;
+}
+
+.botoes {
+    margin: 0;
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+}
+
+.botoes > button {
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+}
+
+.comprar {
+    background-color: #186d28; /* Cor de fundo */
+    font-size: 24px; /* Tamanho da fonte */
+    color: #fff; /* Cor do texto */
+    margin-top: -33px;
+    padding: 15px 58px; /* Padding para aumentar o tamanho do botão */
+    border-radius: 5px; /* Cantos arredondados */
+    border: none; /* Remover borda padrão */
+    cursor: pointer; /* Adicionar cursor de ponteiro */
+    text-align: center; /* Centralizar o texto */
+}
+
+.comprar:hover {
+    background-color: #59ff85; /* Cor de fundo ao passar o mouse */
+}
+
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.produto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    width: 30%;
+    min-width: 280px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    overflow: hidden;
+    grid-template-columns: repeat(3, 1fr); /* Cria três colunas iguais */
+    gap: 10px; /* Espaçamento entre os itens */
+}
+
+.produto > img {
+    width: 100%;
+    height: auto;
+}
+
+.produtotext {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.produtotext > .carrinho {
+    cursor: pointer;
+    margin-top: 10px;
+    text-align: center;
+    background-color: rgba(208, 1, 81, 1);
+    color: #fff;
+    font-size: 130%;
+}
+
+.preco {
+    margin-top: 10px;
+    color: rgba(208, 1, 81, 1);
+    font-size: 30px;
+}
+
+.tamanhos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tamanho {
+    cursor: pointer;
+    margin: 5px;
+    background-color: #fff;
+    border-radius: 10%;
+    outline: 0.1px solid rgb(119, 119, 119);
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+@media screen and (max-width: 1100px) {
+    #cadastrar {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+    }
+    #login {
+        position: absolute;
+        top: 20px;
+        right: 150px;
+    }
+    #formulario {
+        top: 100px;
+        right: 20px;
+    }
+}
+
+.h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.h2 {
+    font-family: 'Cambria', Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 12px; /* Tamanho da fonte */
+    font-weight: normal; /* Peso da fonte */
+    color: #333; /* Cor do texto */
+    margin: 10px 5px; /* Margem superior e inferior */
+}
